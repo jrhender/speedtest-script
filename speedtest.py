@@ -3,10 +3,10 @@ import subprocess
 import time
 
 # Set the number of seconds between each speedtest
-interval = 5
+interval = 300
 
 # Set the number of tests to run
-num_tests = 1 
+num_tests = 10
 
 start_timestamp = time.strftime("%Y-%m-%d_%H-%M-%S", time.gmtime())
 
@@ -18,7 +18,7 @@ with open(f'{start_timestamp}_speedtest_results.csv', mode='w') as csv_file:
 
     # Perform the tests
     for i in range(num_tests):
-        print(f'speedtest {i}')
+        print(f'executing test {i}')
         # Get the current time
         timestamp = time.strftime("%Y-%m-%d %H:%M:%S", time.gmtime())
 
