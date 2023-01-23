@@ -3,10 +3,10 @@ import subprocess
 import time
 
 # Set the number of seconds between each speedtest
-interval = 20 # 10 minutes
+interval = 20
 
 # Set the number of tests to run
-num_tests = 5 # 1 hour
+num_tests = 5 
 
 # Open a CSV file for writing
 with open('speedtest_results.csv', mode='w') as csv_file:
